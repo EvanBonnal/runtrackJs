@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job 3</title> 
+  </head>
+    <body>
+        <form id="pokemon-form">
+            <label>ID: <input type="text" id="poke-id"></label>
+            <label>Nom: <input type="text" id="poke-nom"></label>
+            <label>Type: 
+                <select id="poke-type">
+                    <option value="">Tous</option>
+                    <option value="Grass">Plante</option>
+                    <option value="Fire">Feu</option>
+                    <option value="Water">Eau</option>
+                    <option value="Bug">Insecte</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Poison">Poison</option>
+                    </select>
+            </label>
+            <input type="button" id="filtrer" value="Filtrer">
+        </form>
+
+        <div id="resultats"></div>
+        <script src="script.js"></script>
+    </body>
+</html> 
