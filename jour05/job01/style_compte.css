@@ -1,0 +1,73 @@
+:root {
+    --accent-color: #a5d15a;
+    --dark-bg: #212529;
+    --light-bg: #f5f5f5;
+    --error-color: #d93025;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+/* Background difference for the two pages */
+.page-connexion { background-color: var(--light-bg); }
+
+.container-standalone {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 90%;
+}
+
+.registration-full { max-width: 900px; }
+.login-card { max-width: 450px; }
+
+/* Grid for Inscription */
+.registration-section { display: flex; padding: 40px; }
+
+.benefit-sidebar { width: 35%; padding-right: 30px; border-right: 1px solid #eee; }
+.registration-form-container { width: 65%; padding-left: 30px; }
+
+/* Login Section styling */
+.login-section { padding: 40px; width: 100%; }
+
+/* Form Elements */
+.header-dark { margin-bottom: 25px; border-bottom: 3px solid var(--accent-color); display: inline-block; }
+.form-group { margin-bottom: 15px; }
+.form-row { display: flex; gap: 15px; }
+.form-row .form-group { flex: 1; }
+
+label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9em; }
+input {
+    width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px;
+    background-color: var(--light-bg); transition: 0.3s;
+}
+input:focus { outline: none; border-color: var(--accent-color); background-color: #fff; }
+
+.btn-dark-full {
+    width: 100%; padding: 15px; background: var(--dark-bg); color: #fff;
+    border: none; border-radius: 4px; font-weight: bold; cursor: pointer; margin-top: 10px;
+}
+.btn-dark-full:hover { background: #333; }
+
+.error { color: var(--error-color); font-size: 0.8em; margin-top: 4px; display: block; min-height: 1.2em; }
+.input-error { border-color: var(--error-color); }
+
+.switch-link { text-align: center; margin-top: 20px; font-size: 0.9em; }
+.switch-link a { color: var(--accent-color); text-decoration: none; font-weight: bold; }
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .registration-section { flex-direction: column; }
+    .benefit-sidebar { width: 100%; border-right: none; border-bottom: 1px solid #eee; padding: 0 0 20px 0; margin-bottom: 20px; }
+    .registration-form-container { width: 100%; padding-left: 0; }
+    .form-row { flex-direction: column; gap: 0; }
+}

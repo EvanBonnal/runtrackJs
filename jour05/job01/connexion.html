@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion - Jour 05</title>
+    <link rel="stylesheet" href="style_compte.css">
+</head>
+<body class="page-connexion">
+    <div class="container-standalone login-card">
+        <section class="login-section">
+            <h2 class="header-dark">CONNEXION</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="text" id="loginEmail" placeholder="votre@email.com">
+                    <span id="loginEmailError" class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Mot de passe:</label>
+                    <input type="password" id="loginPassword" placeholder="••••••••">
+                    <span id="loginPasswordError" class="error"></span>
+                </div>
+
+                <button type="submit" class="btn-dark-full">SE CONNECTER</button>
+                <p class="switch-link">Pas encore de compte ? <a href="inscription.html">Inscrivez-vous</a></p>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
